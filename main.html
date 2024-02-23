@@ -20,8 +20,10 @@
 		</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
-		document.querySelector("form").addEventListener("submit", function(){
+		document.querySelector("form").addEventListener("submit", function(event){
 
+			 event.preventDefault();
+			
 	const firstName = document.getElementById("first").value;
 	const LastName = document.getElementById("Last").value;
 	const phoneNo = document.getElementById("num").value;
